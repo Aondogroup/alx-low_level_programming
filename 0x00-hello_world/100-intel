@@ -1,6 +1,2 @@
 #!/bin/bash
-
-CFILE="main.c"
-OUTFILE="${CFILE%.*}.s"
-
-gcc -S -masm=intel $CFILE -o $OUTFILE
+gcc -S -masm=intel -o ${CFILE%.*}.s $CFILE; echo "Assembly code saved to ${CFILE%.*}.s"
