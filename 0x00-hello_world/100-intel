@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel -o ${CFILE%.*}.s $CFILE; echo "Assembly code saved to ${CFILE%.*}.s"
+gcc -Wall -Werror -Wextra -pedantic -S -masm=intel $CFILE
