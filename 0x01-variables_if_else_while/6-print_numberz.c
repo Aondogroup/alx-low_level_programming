@@ -14,10 +14,8 @@ int i;
 
 for (i = 0; i < 10; i++)
 {
-/* putchar twice is allowed */
-putchar(i + '0'); }
-/* print new line */
+putchar(i + '0');
+}
 putchar('\n');
-    
-/* Return value of 0 to indicate success */
+
 return (0); }
