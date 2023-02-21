@@ -4,11 +4,9 @@
  * main - Entry point
  *
  * Description: Prints all possible different combinations of two digits.
+ *              The two digits must be different and in ascending order.
  *              Numbers must be separated by ", ", followed by a space.
- *              The two digits must be different.
- *              01 and 10 are considered the same combination of the two digits 0 and 1.
- *              Print only the smallest combination of two digits.
- *              Numbers should be printed in ascending order, with two digits.
+ *              No trailing comma at the end.
  *
  * Return: Always 0 (Success)
  */
@@ -22,14 +20,14 @@ for (j = i + 1; j <= 9; j++)
 {
 putchar(i + '0');
 putchar(j + '0');
-
-if (i < 8)
-{
+if (i == 8 && j == 9)
+break;
 putchar(',');
 putchar(' ');
 }
 }
-}
+
 putchar('\n');
 
-return (0); }
+return (0);
+}
