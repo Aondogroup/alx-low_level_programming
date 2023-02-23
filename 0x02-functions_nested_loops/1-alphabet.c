@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints the alphabet in lowercase
+ * print_alphabet - prints the lowercase alphabet followed by a new line
  */
 void print_alphabet(void)
 {
@@ -12,17 +12,5 @@ while (letter <= 'z')
 _putchar(letter);
 letter++;
 }
-putchar('\n');
-}
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-return (write(1, &c, 1));
+_putchar('\n');
 }
