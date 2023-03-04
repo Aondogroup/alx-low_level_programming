@@ -1,24 +1,28 @@
-#include "main.h"
 #include <stdio.h>
+
 /**
- * main - Entry point, prints the first 50 numbers of Fibonacci sequence
+ * main - Entry point
+ *
+ * Description: Prints the first 50 Fibonacci numbers starting with 1, 2
+ * separated by a comma and a space.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int a = 1, b = 1, i;
-int next;
+int i;
+long int prev = 1, curr = 2, next;
 
-for (i = 0; i < 50; i++)
+printf("%ld, %ld", prev, curr);
+
+for (i = 3; i <= 50; i++)
 {
-printf("%d", a);
-if (i < 49)
-printf(", ");
-next = a + b;
-a = b;
-b = next;
+next = prev + curr;
+printf(", %ld", next);
+prev = curr;
+curr = next;
 }
+
 printf("\n");
 return (0);
 }
