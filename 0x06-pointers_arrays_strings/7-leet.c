@@ -6,24 +6,23 @@
  */
 char *leet(char *str)
 {
-    char *s = str;
-    char *letters = "aAeEoOtTlL";
-    char *numbers = "4433007711";
+char *s = str;
+char *letters = "aAeEoOtTlL";
+char *numbers = "4433007711";
 
-    while (*s)
-    {
-        int i;
+while (*s)
+{
+int i;
 
-        for (i = 0; letters[i]; i++)
-        {
-            if (*s == letters[i])
-            {
-                *s = numbers[i];
-                break;
-            }
-        }
-        s++;
-    }
-    return (str);
+for (i = 0; letters[i]; i++)
+{
+if (*s == letters[i])
+{
+*s = numbers[i];
+break;
 }
-
+}
+s++;
+}
+return (str);
+}
