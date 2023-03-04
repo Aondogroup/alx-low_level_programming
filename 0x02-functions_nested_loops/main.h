@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
+int add(int a, int b);
 void jack_bauer(void);
 int print_last_digit(int n);
 int _abs(int);
