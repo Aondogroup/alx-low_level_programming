@@ -4,6 +4,9 @@
 /* Function prototype for _puts_recursion */
 void _puts_recursion(char *s);
 
+/* Function prototype for _strlen_recursion */
+int _strlen_recursion(char *s);
+
 /* function prototype for _putchar */
 int _putchar(char c);
 
