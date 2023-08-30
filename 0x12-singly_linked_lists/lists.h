@@ -29,6 +29,9 @@ list_t *add_node_end(list_t **head, const char *str);
 
 /* Function to free a list_t list */
 void free_list(list_t *head);
+/* Function to add a new node at the beginning of a list_t list */
+list_t *add_node(list_t **head, const char *str);
+
 
 #endif /* LISTS_H */
 
