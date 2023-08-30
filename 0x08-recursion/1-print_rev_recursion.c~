@@ -1,14 +1,8 @@
 #include "main.h"
 
-/**
- * reversePrintRecursion - Prints a string in reverse using recursion
- * @s: The input string
- *
- * Description: This function prints a given string in reverse order using recursion.
- */
+/* Custom implementation of _print_rev_recursion */
 void _print_rev_recursion(char *s) {
-if (*s == '\0')
-{
+if (*s == '\0') {
 return; /* Base case: If the end of the string is reached, exit the function */
 }
 
