@@ -13,4 +13,9 @@ int _putchar(char c);
 /* Function prototype for _print_rev_recursion */
 void _print_rev_recursion(char *s);
 
+/* Function prototype for factorial*/
+int factorial(int n);
+
+/* Function prototype for wildcmp*/
+int wildcmp(char *s1, char *s2);
 #endif /* MAIN_H */

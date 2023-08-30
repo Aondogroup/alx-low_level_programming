@@ -15,4 +15,10 @@ void _print_rev_recursion(char *s);
 
 /* Function prototype for factorial*/
 int factorial(int n);
+
+/* Function prototype for wildcmp*/
+int wildcmp(char *s1, char *s2);
+
+/* Function prototype for is_palindrome*/
+int is_palindrome(char *s);
 #endif /* MAIN_H */
