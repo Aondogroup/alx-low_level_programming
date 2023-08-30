@@ -18,4 +18,9 @@ int factorial(int n);
 
 /* Function prototype for wildcmp*/
 int wildcmp(char *s1, char *s2);
+
+/* Function prototype for is_palindrome*/
+int is_palindrome(char *s);
+
+int _pow_recursion(int x, int y);
 #endif /* MAIN_H */
